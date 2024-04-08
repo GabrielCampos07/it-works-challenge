@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="logo">
+      <img
+        (click)="menuStateChange.emit()"
+        src="./images/menu-{{ menuState ? 'open' : 'close' }}.svg"
+        width="25px"
+      />
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
