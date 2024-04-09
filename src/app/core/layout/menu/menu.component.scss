@@ -1,0 +1,13 @@
+:host {
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,7 +1,7 @@
 <div class="page">
   <mat-sidenav-container>
     <mat-sidenav mode="side" #sidenav>
-      <app-menu (itemClick)="sidenav.toggle()"></app-menu>
+      <app-menu [modules]="modules" (itemClick)="sidenav.toggle()"></app-menu>
     </mat-sidenav>
 
     <mat-sidenav-content>

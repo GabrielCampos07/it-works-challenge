@@ -1,11 +1,13 @@
-export interface Body {
+export interface res {
+  awsFilter: string;
   body: Module[];
+  statusCode: number;
 }
 
 export interface Module {
   id: number;
   Descricao: string;
-  SubModulos: SubModules[];
+  subModulos?: SubModules[];
 }
 
 export interface SubModules {

@@ -1,0 +1,32 @@
+:host {
+  width: 80%;
+  align-self: center;
+
+  mat-expansion-panel {
+    background-color: #424242;
+  }
+
+  mat-panel-title {
+    color: white;
+  }
+
+  p {
+    cursor: pointer;
+  }
+
+  .active {
+    color: #7ebb06;
+  }
+
+  ::ng-deep {
+    .mat-expansion-indicator::after {
+      color: white;
+    }
+
+    .mat-expansion-panel-body {
+      p {
+        color: white;
+      }
+    }
+  }
+}

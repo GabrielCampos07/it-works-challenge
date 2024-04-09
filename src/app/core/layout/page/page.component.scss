@@ -1,14 +1,3 @@
-::ng-deep .container-page .ng-animating {
-  background: #F5F5F5;
-
-  &:nth-child(2) {
-    display: block;
-  }
-  &:nth-child(3) {
-    visibility: hidden;
-  }
-}
-
 mat-sidenav-content {
   transition: all 0.4s ease;
   display: grid;
@@ -24,29 +13,11 @@ mat-sidenav {
   display: grid;
 }
 
-.close {
-  color: #fff;
-  float: right;
-  margin: 10px;
-}
-
 .container-page {
   background: #fff;
   overflow: auto;
   margin: 14px 10px;
   padding: 44px 64px;
   position: relative;
-
-  @media screen and (max-width: 768px) {
-    margin: 0px;
-    padding: 24px;
-  }
-}
-
-.hide {
-  transition: all ease 0.4s;
-  position: absolute;
-  width: calc(100% - 13%);
-  opacity: 0;
-  transform: translateY(100px);
+  border-radius: 8px;
 }

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Module } from './shared/module';
 
 @Component({
@@ -7,7 +7,7 @@ import { Module } from './shared/module';
   styleUrl: './menu.component.scss',
 })
 export class MenuComponent {
-  @Input() modules!: Module;
+  @Input() modules!: Module[];
 
   @Output() itemClick = new EventEmitter();
 }

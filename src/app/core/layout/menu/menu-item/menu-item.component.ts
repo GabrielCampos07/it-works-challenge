@@ -7,11 +7,20 @@ import { Module } from '../shared/module';
   styleUrl: './menu-item.component.scss',
 })
 export class MenuItemComponent {
-  @Input() modules!: Module;
+  @Input() module!: Module;
 
   @Output() menuItemClick = new EventEmitter();
 
+  panelOpenState: boolean = false;
+  subModuleName: string = '';
+
+  constructor() { }
+
   menuClick(route: string) {
     if (route) this.menuItemClick.emit(route);
+  }
+
+  replaceNameSpaces(subModuleName: string): string {
+    return subModuleName.replace(/\s+/g, '-');
   }
 }
