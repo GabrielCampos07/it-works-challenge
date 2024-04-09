@@ -1,11 +1,12 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
   <mat-toolbar-row>
-    <div class="logo">
+    <div class="title-logo">
       <img
         (click)="menuStateChange.emit()"
-        src="./images/menu-{{ menuState ? 'open' : 'close' }}.svg"
+        src="assets/images/menu-{{ menuState ? 'open' : 'close' }}.svg"
         width="25px"
       />
+      <p>IT-WORKS CHALLENGE</p>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>

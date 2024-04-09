@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '../../shared/shared.module';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
-
+import { MenuItemComponent } from './menu/menu-item/menu-item.component';
+import { PageComponent } from './page/page.component';
+import { SharedModule } from '../../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [
-    CommonModule, SharedModule
+  declarations: [
+    HeaderComponent,
+    MenuComponent,
+    MenuItemComponent,
+    PageComponent,
   ],
-  declarations: [HeaderComponent, MenuComponent]
+  imports: [CommonModule, SharedModule, RouterModule],
 })
-export class LayoutModule { }
+export class LayoutModule {}

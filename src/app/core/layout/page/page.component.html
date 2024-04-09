@@ -1,0 +1,18 @@
+<div class="page">
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" #sidenav>
+      <app-menu (itemClick)="sidenav.toggle()"></app-menu>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-header
+          [menuState]="sidenav.opened"
+          (menuStateChange)="sidenav.toggle()"
+        ></app-header>
+
+      <div class="container-page">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

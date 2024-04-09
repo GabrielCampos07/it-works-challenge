@@ -1,7 +1,5 @@
-:host {
-  width: 100%;
-
-  img {
-    cursor: pointer;
-  }
+.title-logo {
+  display: flex;
+  gap: 15px;
+  color: white;
 }

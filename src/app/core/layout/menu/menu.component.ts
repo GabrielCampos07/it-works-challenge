@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output, input } from '@angular/core';
+import { Module } from './shared/module';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrl: './menu.component.scss',
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
+  @Input() modules!: Module;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Output() itemClick = new EventEmitter();
 }
