@@ -1,4 +1,4 @@
-# README - Desafio IT Works
+# Desafio IT Works
 
 Este é um guia básico para ajudar você a iniciar o desafio desenvolvido em Angular. Certifique-se de que o Node.js e o Angular CLI estão instalados no seu sistema antes de começar.
 
