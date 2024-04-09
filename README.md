@@ -1,27 +1,33 @@
-# ItWorksChallenge
+# README - Desafio IT Works
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Este é um guia básico para ajudar você a iniciar o desafio desenvolvido em Angular. Certifique-se de que o Node.js e o Angular CLI estão instalados no seu sistema antes de começar.
 
-## Development server
+## Node.js
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Certifique-se de ter a versão 20.12.1 do Node.js instalada.
 
-## Code scaffolding
+## Instalando Dependências do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Navegue até o diretório do projeto e instale as dependências usando npm ou yarn:
 
-## Build
+```
+cd nome_do_projeto
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ou
 
-## Running unit tests
+```
+cd nome_do_projeto
+yarn install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Servindo a Aplicação Localmente
 
-## Running end-to-end tests
+Depois de instalar as dependências, você pode iniciar o servidor de desenvolvimento executando:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+ng serve ou npm start
+```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Isso irá compilar o projeto e iniciar um servidor de desenvolvimento. Por padrão, a aplicação estará disponível em `http://localhost:4200/`. Você pode acessar este URL no seu navegador para visualizar a aplicação em execução.
